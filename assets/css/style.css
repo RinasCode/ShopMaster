@@ -1,0 +1,73 @@
+.epi-login {
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  min-height: 100vh;
+  min-width: 100vw;
+  background-image: url('/epi/assets/img/vr-bg.jpg');
+  background-size: cover;
+}
+
+
+.epi-datatable, 
+.epi-datatable tbody tr td {
+  border-bottom: 1px solid #e9ecef !important;
+}
+
+.epi-text-sm {
+  font-size: 0.875rem !important;
+}
+
+.epi-text-base {
+  font-size: 1rem !important;
+}
+
+.epi-sidebar-height {
+  height: calc(100vh - 150px) !important;
+}
+
+.epi-min-h-content {
+  min-height: calc(100vh - 180px) !important;
+}
+
+.dataTables_length,
+.dataTables_info {
+  padding-left: 1rem;
+}
+
+.dataTables_filter,
+.dataTables_paginate  {
+  padding-right: 1rem;
+}
+
+.dataTables_paginate .paginate_button:hover {
+  border-color: #cb0c9f !important;
+  background: #cb0c9f !important;
+}
+.dataTables_paginate .current:hover {
+  border-color: rgba(0, 0, 0, 0.3) !important;
+  background: linear-gradient(to bottom, rgba(230, 230, 230, 0.1) 0%, rgba(0, 0, 0, 0.1) 100%) !important;
+}
+
+.dataTables_paginate .disabled {
+  color: #8392AB !important;
+}
+
+.dataTables_paginate .disabled:hover {
+  border-color: transparent !important;
+  background: transparent !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-center {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
