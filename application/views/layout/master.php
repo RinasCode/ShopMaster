@@ -21,7 +21,7 @@
   <link rel="apple-touch-icon" sizes="76x76" href="<?= base_url(); ?>assets/img/apple-icon.png">
   <link rel="icon" type="image/png" href="<?= base_url(); ?>assets/img/favicon.png">
   <title>
-    <?php if (isset($title)) echo $title . " | " ?>PT. Ekuator Putra Indonesia
+    <?php if (isset($title)) echo $title . " | " ?>Shop Master
   </title>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
@@ -72,10 +72,13 @@
 
     <?php if (!empty($this->session->flashdata('errorLogin'))) { ?>
       alertify.error("<?php echo $this->session->flashdata('errorLogin'); ?>");
+      <?php $this->session->set_flashdata('errorLogin', null); ?>
     <?php } else if (!empty($this->session->flashdata('success'))) { ?>
       alertify.success("<?php echo $this->session->flashdata('success'); ?>");
+      <?php $this->session->set_flashdata('success', null); ?>
     <?php } else if (!empty($this->session->flashdata('error'))) { ?>
       alertify.error("<?php echo $this->session->flashdata('error'); ?>");
+      <?php $this->session->set_flashdata('error', null); ?>
     <?php } ?>
 
     $(document).ready(function() {

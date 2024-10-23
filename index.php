@@ -312,4 +312,7 @@ switch (ENVIRONMENT)
  *
  * And away we go...
  */
+
+ error_reporting(E_ALL & ~E_DEPRECATED & ~E_STRICT);
+
 require_once BASEPATH.'core/CodeIgniter.php';
